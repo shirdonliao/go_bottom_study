@@ -30,7 +30,7 @@ func GetPriceUserName(users map[string]int64) (name string) {
 }
 
 func main() {
-	var users = map[string]int64{
+	var users = map[string]int64 {
 		"a": 10,
 		"b": 6,
 		"c": 3,
@@ -38,6 +38,9 @@ func main() {
 		"e": 20,
 		"f": 1,
 	}
+
+	t := time.Now().Add(24 * time.Hour)
+	fmt.Println("t",t)
 
 	rand.Seed(time.Now().Unix())
 	awardStat := make(map[string]int64)
