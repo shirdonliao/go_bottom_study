@@ -9,7 +9,6 @@
 package main
 
 import (
-	"./projects/oop"
 	"fmt"
 )
 
@@ -30,11 +29,45 @@ func main()  {
 	//oop.Test(123)
 	//oop.Test(true)
 
-	names := []string{"a", "0", "c","DDD"}
-	fmt.Println(len(names))
-	vals := make([]interface{}, len(names))
-	for i, v := range names {
-		vals[i] = v
+	//names := []string{"a", "0", "c","DDD"}
+
+	//num := []int{1,2,3,4}
+
+	//twoArr := [2][2] int{
+	//	{1,2},
+	//	{3,4},
+	//}
+	//vals := make([]interface{},len(twoArr))
+
+	shirdon := map[string]string {
+		"name":"shirdon",
+		"age":"28",
 	}
-	oop.PrintAll(vals)
+
+	for _,va:= range shirdon {
+		fmt.Println(va)
+	}
+
+
+	//for _,val := range &twoArr {
+	//	for _,v := range &val {
+	//		v = v+1
+	//		fmt.Println(v)
+	//	}
+	//}
+	//fmt.Println(twoArr)
+
+	//vals := make([]interface{}, len(names))
+	//for i, v := range twoArr {
+	//	vals[i] = v
+	//}
+	//base.Foreach(vals)
+	//oop.PrintAll(vals)
+
+	//vals := make([]interface{}, len(num))
+	//for _, v := range names {
+	//	//vals[i] = v
+	//	fmt.Println(v)
+	//}
+	//oop.Params(vals)
 }

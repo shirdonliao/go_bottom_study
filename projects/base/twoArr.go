@@ -6,24 +6,12 @@
 //Email:hcbsts@163.com;  823923263@qq.com
 //++++++++++++++++++++++++++++++++++++++++
 
-package oop
+package base
 
-import (
-"fmt"
-)
+import "fmt"
 
-func PrintAll(vals []interface{}) {
-	for _, val := range vals {
+func Foreach(arr []interface{})  {
+	for _,val := range arr {
 		fmt.Println(val)
 	}
 }
-
-func Params(paras []interface{})  {
-
-	for key,val := range paras {
-		fmt.Println(key)
-		fmt.Println(val)
-	}
-
-}
-
