@@ -12,7 +12,7 @@ import (
 	"fmt"
 )
 
-func main()  {
+func main() {
 	//user := oop.Attrs{1,"sss","ddd","ddd"}
 	//	//uid := user.GetUid()
 	//	//user.Login()
@@ -39,15 +39,16 @@ func main()  {
 	//}
 	//vals := make([]interface{},len(twoArr))
 
-	shirdon := map[string]string {
-		"name":"shirdon",
-		"age":"28",
+	shirdon := map[string]string{
+		"name": "shirdon",
+		"age":  "28",
 	}
+	name, ok := shirdon["aaa"]
+	fmt.Println(name, ok)
 
-	for _,va:= range shirdon {
-		fmt.Println(va)
-	}
-
+	//for _,va:= range shirdon {
+	//	fmt.Println(va)
+	//}
 
 	//for _,val := range &twoArr {
 	//	for _,v := range &val {
